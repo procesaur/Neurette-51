@@ -1,42 +1,29 @@
 # Neurette-51
 Neurette is a Java application with a goal to increase one's odds of prospering in live online roulette playrooms.
 
-<!--
-Some of the options included are:
-- dataset reconstruction
-- particle swarm movement limitations adjustments
-- particle swarm orientation and tendency adjustments
-- different algorithm stop options
-- display of multiple resulted metrics
+Might I add, the application itself is not anything special, but a very simple one, only providing input for the neural network and reading the ouput of the same. The true value, in mine oppinion, lies in the other files in this git, such as datasets and trained networks.
 
-It is supposed to help in narrowing down parameter option for different problems trough testing on different datasetes (40 of them) which are included in the project and are acquired from OR-Library [Copyright (c) (2010) (J E Beasley}](http://people.brunel.ac.uk/~mastjjb/jeb/orlib/legal.html).
--->
+## What does this do?
+... soon ...
+
 ## Basic information on solution shape and origin
-<!--
-This git contains complete fileset of a Visual Studio solution (.sln) project (x64, visual C#, windows forms application).
-Starting and editing of the project in this form requires Micorsoft Windows, suitable version of [Visual Studio](https://www.visualstudio.com/) (VS2015 and VS 2017 certany work), suitable x64 machine, and a suitable version of Microsoft .NET framework (4.5 or higher).
--->
-## Folders and files
-<!--
-- "SwarmForge.sln" - Visual studio solution project file
+This git containsan Eclipse Java solution minus the depending Files and libraries, which can be obtained online as they are all free to use. All of this is stationed in Source folder, while the other folders contain .txt datasets i procured myself.
 
-- "SwarmForge" folder - main folder containing the project (containg 3 types of files/folders) >>>>>>
-   - Folders required for the application installation to run properly, and must be contained in the distribution >>>
-     - "data" folder - contains 40 datasets (.txt files) from the OR library;
-     - "opt" folder - contains 2 .txt files with solutions of 40 problems from datasets above, also from theOR library;
-     - "log" folder - will contain potential log files in the application installation directory;  
+## Folders and files
+- "Source" folder - main folder containing the application, containing 3 subfolders >>>
+   - "META-INF" folder - contains dependencies information >
     
-   - Files/Folders required for the VS solution project to run properly >> >>>
-     - "Properties" folder - folder containig some visual studio project properties files;
-     - "obj" folder - contains files for debug and release of the current application;
-     - "App.config" file that contains the app configuration;
-     - "SwarmForge.csproj" file that contains the project information;
-     - "SwarmForge.resx" file;
+   - "org/eclipse/jdt/internal/jarinjarloader" folder - contains some Eclipse files >>> 
    
-   - Files that contain author code >>>
-     - "Program.cs" file - is the starting program file with whole purpose to start the SwarForge application;
-     - **"_SwarmForge.cs_" file - is the main application file containing author code;**
-     - "SwarmForge.Designer.cs" file - is the file containing definition, outline and properties of the complete application GUI.
--->
+   - "neurette" folder - contains application code >>   
+     - "neurette.java" file - contains nearly complete code for both application design and funcionality;
+     - "nn1.java" file - side file containig only the small portion of code;
+     
+- "gathered_data" folder - contains series of roulette entries i gathered, grouped in different folders based on the techniques i used for their transformation into information
+
+- "generated_datasets" folder - contains series of datasets i made using the data from the folder above
+
+- "trained_networks" folder - contains most succesfull neural networks of those i made using the above mentioned datasets. They are in .nnet format as I trained using the [Neuroph framework](http://neuroph.sourceforge.net/).
+
 ## Contributing and versioning
 Currently the code and datasets have only one version (this one) and only one contributor (me).
