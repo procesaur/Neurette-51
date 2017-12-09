@@ -4,7 +4,7 @@ Neurette is a Java application with a goal to increase one's odds of prospering 
 Might I add, the application itself is not anything special, but a very simple one, only providing input for the neural network and reading the ouput of the same. The true value, in mine oppinion, lies in the other files in this git, such as datasets and trained networks.
 
 ## What does this do?
-This application tries to predict the half of roulette where the next ball will end up, based on last ten draws and under the questionlable assumptions that some live online roulette rooms aren't completely random and that the last x draws influence the following ones.
+This application tries to predict the half of roulette where the next ball will end up, based on last ten draws and under questionlable assumptions that some of the live online roulette rooms aren't completely random and that the last x draws influence the following ones.
 
 You simply input last ten drawn numbers and pass it to recieve an output in form of an area.
 
